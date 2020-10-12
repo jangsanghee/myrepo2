@@ -37,6 +37,3 @@ a_all = li_all.find_all("a")
 
 for i in a_all:
     print(i.text)
-    
-#%%
-
