@@ -34,6 +34,13 @@ li_all = soup.find("ul", class_="lst_pop")
 # print(li_all)
 
 a_all = li_all.find_all("a")
+li_span = li_all.find_all("span")
 
 for i in a_all:
     print(i.text)
+
+cnt = 0
+for i in li_span:
+    if cnt%2 == 0:
+         print(i.text)
+    cnt =cnt +1
